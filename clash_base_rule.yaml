@@ -56,6 +56,9 @@ experimental:
 #   'alpha.clash.dev': '::1'
 
 cfw-bypass:
+  - dev1
+  - dev2
+  - dev3
   - qq.com
   - music.163.com
   - '*.music.126.net'
@@ -83,7 +86,7 @@ cfw-bypass:
 cfw-latency-timeout: 5000
 
 dns:
-  enable: true
+  enable: false
   ipv6: true
   listen: 0.0.0.0:53
   enhanced-mode: redir-host # redir-host 或 fake-ip
