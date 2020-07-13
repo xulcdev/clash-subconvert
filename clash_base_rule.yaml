@@ -55,49 +55,19 @@ experimental:
 #   '*.clash.dev': 127.0.0.1
 #   'alpha.clash.dev': '::1'
 
-cfw-bypass:
-  - dev1
-  - dev2
-  - dev3
-  - qq.com
-  - music.163.com
-  - '*.music.126.net'
-  - localhost
-  - 127.*
-  - 10.*
-  - 172.16.*
-  - 172.17.*
-  - 172.18.*
-  - 172.19.*
-  - 172.20.*
-  - 172.21.*
-  - 172.22.*
-  - 172.23.*
-  - 172.24.*
-  - 172.25.*
-  - 172.26.*
-  - 172.27.*
-  - 172.28.*
-  - 172.29.*
-  - 172.30.*
-  - 172.31.*
-  - 192.168.*
-  - <local>
-cfw-latency-timeout: 5000
-
 dns:
-  enable: false
-  ipv6: true
+  enable: true
+  ipv6: false
   listen: 0.0.0.0:53
-  enhanced-mode: redir-host # redir-host 或 fake-ip
+  enhanced-mode: fake-ip # redir-host 或 fake-ip
   # # fake-ip-range: 198.18.0.1/16 # 如果你不知道这个参数的作用，请勿修改
   # fake-ip-filter: # fake-ip 白名单列表
   #   - '*.lan'
   #   - localhost.ptlogin2.qq.com
 
   nameserver:
-    #- 119.29.29.29
-    #- 114.114.114.114
+    - 119.29.29.29
+    - 114.114.114.114
     #- 223.5.5.5
     #- tls://13800000000.rubyfish.cn:853
     - https://rubyfish.cn/dns-query
@@ -133,7 +103,3 @@ dns:
 #   DoH: 以 https:// 开头的 DNS 服务器。拥有更好的伪装性，且几乎不可能被运营商或网络管理封锁，但查询效率和安全性可能略低。
 #   DoT: 以 tls:// 开头的 DNS 服务器。拥有更高的安全性和查询效率，但端口有可能被管制或封锁。
 #   若要了解更多关于 DoH/DoT 相关技术，请自行查阅规范文档。
-
-Proxy: ~
-Proxy Group: ~
-Rule: ~
