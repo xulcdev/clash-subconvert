@@ -39,10 +39,6 @@ log-level: info
 # RESTful API 的口令 (可选)
 # secret: ""
 
-# 实验性功能
-experimental:
-  ignore-resolve-fail: true # 忽略 DNS 解析失败，默认值为 true
-
 # 本地 SOCKS5 / HTTP(S) 服务认证
 # authentication:
 #  - "user1:pass1"
