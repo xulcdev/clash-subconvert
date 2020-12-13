@@ -48,7 +48,7 @@ external-controller: 127.0.0.1:9090
 #   'alpha.clash.dev': '::1'
 
 dns:
-  enable: true
+  enable: false
   ipv6: false
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip # redir-host 或 fake-ip
