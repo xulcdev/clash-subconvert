@@ -43,14 +43,14 @@ external-controller: 127.0.0.1:9090
 # # 实验性功能 hosts, 支持通配符 (例如 *.clash.dev 甚至 *.foo.*.example.com)
 # # 静态的域名 比 通配域名 具有更高的优先级 (foo.example.com 优先于 *.example.com)
 # # 注意: hosts 在 fake-ip 模式下不生效
-#hosts:
+hosts:
   # DCN harbor
-  #'reg.harbor.com': 132.252.37.116
+  'reg.harbor.com': 132.252.37.116
   # Royal TSX 防官方验证
-  #'api.royalapps.com': 127.0.0.1
+  'api.royalapps.com': 127.0.0.1
   # Added by Docker Desktop
   # To allow the same kube context to work on the host and the container:
-  #'kubernetes.docker.internal': 127.0.0.1
+  'kubernetes.docker.internal': 127.0.0.1
 
 # DNS 服务器配置(可选；若不配置，程序内置的 DNS 服务会被关闭)
 dns:
