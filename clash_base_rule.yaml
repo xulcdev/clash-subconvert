@@ -45,17 +45,17 @@ external-controller: 127.0.0.1:9090
 # # 注意: hosts 在 fake-ip 模式下不生效
 hosts:
   # 致云科技
-  #'rancher.cloud-cloud.com': 10.101.1.141
-  #'harbor.cloud-cloud.com': 10.101.1.141
-  #'nexus.cloud-cloud.com': 10.101.1.141
-  #'metersphere.cloud-cloud.com': 10.101.1.141
+  'rancher.cloud-cloud.com': 10.101.1.141
+  'harbor.cloud-cloud.com': 10.101.1.141
+  'nexus.cloud-cloud.com': 10.101.1.141
+  'metersphere.cloud-cloud.com': 10.101.1.141
   # Added by Docker Desktop
   # To allow the same kube context to work on the host and the container:
-  #'kubernetes.docker.internal': 127.0.0.1
+  'kubernetes.docker.internal': 127.0.0.1
 
 # DNS 服务器配置(可选；若不配置，程序内置的 DNS 服务会被关闭)
 dns:
-  enable: false
+  enable: true
   listen: 0.0.0.0:53
   ipv6: true # 当此选项为 false 时, AAAA 请求将返回空
 
