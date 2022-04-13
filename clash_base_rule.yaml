@@ -52,6 +52,7 @@ hosts:
   # Added by Docker Desktop
   # To allow the same kube context to work on the host and the container:
   'kubernetes.docker.internal': 127.0.0.1
+  'confluence.ecloud.com': 10.0.31.61
 
 # DNS 服务器配置(可选；若不配置，程序内置的 DNS 服务会被关闭)
 dns:
