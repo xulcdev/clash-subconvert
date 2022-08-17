@@ -56,15 +56,15 @@ external-controller: 127.0.0.1:9090
 
 # DNS 服务器配置(可选；若不配置，程序内置的 DNS 服务会被关闭)
 dns:
-  enable: false
+  enable: true
   listen: 0.0.0.0:53
   ipv6: true # 当此选项为 false 时, AAAA 请求将返回空
 
   # 以下填写的 DNS 服务器将会被用来解析 DNS 服务的域名
   # 仅填写 DNS 服务器的 IP 地址
   default-nameserver:
-    - 114.114.114.114
     - 223.5.5.5
+    - 114.114.114.114
   enhanced-mode: redir-host # 或 fake-ip
   # fake-ip-range: 198.18.0.1/16 # Fake IP 地址池 (CIDR 形式)
   use-hosts: true # 查询 hosts 并返回 IP 记录
